@@ -1,0 +1,11 @@
+The Sentinel-series data download portal can be reached at https://scihub.copernicus.eu/dhus/#/home
+
+Currently, there is only L1C level product of Sentinel-2a available for public downloading. For more information about the difference between L1C (TOA) and L2A (BOA) can refer to https://earth.esa.int/web/sentinel/user-guides/sentinel-2-msi/product-types.
+
+After downloading the L1C product, we need to use the Third Party Plugin "Sen2Cor", which is a processor for Sentinel-2 Level 2A product generation and formatting; it performs the atmospheric-, terrain and cirrus correction of Top-Of- Atmosphere Level 1C input data. Sen2Cor creates Bottom-Of-Atmosphere, optionally terrain- and cirrus corrected reflectance images; additional, Aerosol Optical Thickness-, Water Vapor-, Scene Classification Maps and Quality Indicators for cloud and snow probabilities. Its output product format is equivalent to the Level 1C User Product: JPEG 2000 images, three different resolutions, 60, 20 and 10 m (http://step.esa.int/main/third-party-plugins-2/sen2cor/). 
+
+How to install Sen2Cor, refer to http://forum.step.esa.int/t/sen2cor-2-4-0-stand-alone-installers-how-to-install/6908
+
+After finish the installation (Windows for example), we should change the directory where the Sen2Cor-2.4.0-win64 was installed, and then use the command, L2A_Process.bat --resolution 10 --GIP_L2A C:\Users\Binley\Documents\sen2cor\cfg\L2A_GIPP.xml  C:\Users\Binley\Downloads\S2A_MSIL1C_20170311T185151_N0204_R113_T10SEJ_20170311T185939\S2A_MSIL1C_20170311T185151_N0204_R113_T10SEJ_20170311T185939.SAFE\GRANULE\L1C_T10SEJ_A008976_20170311T185939
+
+After obtaining the L2A BOA data, we should attach geographic information with the raw sentinel-2a data. First, we neeed to download the 
