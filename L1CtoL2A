@@ -8,4 +8,4 @@ How to install Sen2Cor, refer to http://forum.step.esa.int/t/sen2cor-2-4-0-stand
 
 After finish the installation (Windows for example), we should change the directory where the Sen2Cor-2.4.0-win64 was installed, and then use the command, L2A_Process.bat --resolution 10 --GIP_L2A C:\Users\Binley\Documents\sen2cor\cfg\L2A_GIPP.xml  C:\Users\Binley\Downloads\S2A_MSIL1C_20170311T185151_N0204_R113_T10SEJ_20170311T185939\S2A_MSIL1C_20170311T185151_N0204_R113_T10SEJ_20170311T185939.SAFE\GRANULE\L1C_T10SEJ_A008976_20170311T185939
 
-After obtaining the L2A BOA data, we should attach geographic information with the raw sentinel-2a data. First, we neeed to download the 
+After obtaining the L2A BOA data, we should attach geographic information with the raw sentinel-2a data. First, we neeed to download the Sentinel tiles, and according to your downloaded sentinel-2 filename"S2A_MSIL1C_20170311T185151_N0204_R113_T10SEJ_20170311T185939", find out your tile number "T10SEJ". Then back to retrieve the corresponding map information from the Sentinel_tires data. 
